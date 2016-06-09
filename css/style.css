@@ -24,7 +24,7 @@ header li a:hover { background-color: none; }
 #search #searchbox { width: 200px; height: 32px; }
 
 /* vegweek */
-#vegweek { background: rgba(17,244,216, .2); width: 360px; height: 350px; padding: 0; float: left; 
+#vegweek { background: rgba(17,244,216, .2); width: 22.500em; height: 21.875em; padding: 0; float: left; 
 	margin: 3%; float: left; clear: none; text-align: center; }
 #vegweek img, #vegweek p, #vegweek h2 { padding: 0 10px; }
 #vegweek img { max-width: 190px; max-height: 190px; padding-left: 10px; }
@@ -36,6 +36,6 @@ header li a:hover { background-color: none; }
 
 /* weekly video */
 #videoweek { float: left; clear: left; margin-left: 2%; }
-#videocontent { float: left; clear: none; }
-#videoweektext { background: rgba(239,239,27, .2); width: 65%; height: 315px; padding: 0; float: right; clear: none; text-align: center; }
+#videocontent { float: left; clear: none; width: 22.500em; height: 14.688em;  }
+#videoweektext { background: rgba(239,239,27, .2); width: 65%; height: auto; padding: 0; float: right; clear: none; text-align: center; }
 #videoweektext h3 { background-color: #EFEF1B; display: block; width: 100%; margin-top: 0; padding: 3px 0; }
