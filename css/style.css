@@ -21,10 +21,11 @@ header h5  { margin: -11.5% 0 10% 44%; }
 #headercust { background-color: #7ED305; position: relative; top: 0; left: 0; width: 100%; }
 header a, #subnav a { color: #fff; }
 header li a:hover { background-color: none; }
-#navbar { float: right; }
+#navbar { float: right; clear: right; }
 #divider { color: #fff; margin-top: 3%; font-size: 16pt;}
 #search { height: 60px; float: right; clear: both; margin: -14% 2% -1% 0; }
 #search #searchbox { width: 200px; height: 34px; border-radius: 5px; border: none; margin-top: 1%; }
+#socmedicon { width: 20px; height: 20px; }
 
 /*subnav*/
 #subnav { border-radius: 0; background-color: rgba(126,211,5, .2); border: none; }
