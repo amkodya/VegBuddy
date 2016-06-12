@@ -1,6 +1,6 @@
 <!--VEG BUDDY 
 *************
-about.html
+contact.html
 *************
  6/12/16
 -->
@@ -87,20 +87,75 @@ $(document).ready(function(){
   		</ul>
 	</nav>
 
-	<!--VEGAN OF THE WEEK -->
-		<div id="about" class="container">              
-			<h3>About us</h3>
-		<!--	<h2>What is Veg Buddy?</h2> -->
-			<p>Many people go on the Internet to search for some sort of community to be a part of that relates to their non-Internet lives. There are many niches and communities that form and continue to grow, much in part by meeting and forming a bond via the web. Veganism is has became an increasingly popular lifestyle and its web present is also becoming a growing trend.<br><br>
-
-There are so many websites that are  awesome and informative but I would want to take this information and these intelligent people and put them together in an interactive community; like a Facebook for Vegans, if you will.  I do realize that Facebook has very many groups for Vegans so Veg Buddy would serve as a hub of communication and information. <br><br>
-
-The growing market of vegans that go online for their research would take comfort in knowing they have a one stop shop to speak to other vegans, ask and answer questions and maybe make some like-minded friends. <br><br>
-
-With Veg Buddy, you can add friends and send them messages. Also, you can share recipes, setup meal plans and make grocery lists. Each user can create a profile and on their page, they can post recipes, shopping lists or ask questions that others can reply to. Also, we will feature user videos and recipies on the main page daily.<br><br>
-
-We believe this website would become a staple to the daily lives of its users. Also, if the goal of facilitating an inviting and positive environment, we will also encourage more users to join as the community grows larger.</p>
-		</div>
+  <!-- contact form -->
+	 <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1>Contact Us</h1>
+          <p class="lead"></p>
+          <form id="contact-form" method="post" action="contact.php" role="form">
+            <div class="messages"></div>
+            <div class="controls">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">First Name</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_lastname">Last Name</label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_email">Email</label>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_phone">Phone</label>
+                  <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="form_message">Message</label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-primary btn-send btn-group-lg" value="Send message" style="text-transform: uppercase;">
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"><br>
+                <p class="text-muted"><strong>*</strong>These fields are required.</p>
+            </div>
+          </div>
+        </div>
+      </form>
+      <section id="contact">
+        <iframe id="contactmap" frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:Eic0MDMgRXVjbGlkIEF2ZSwgU3lyYWN1c2UsIE5ZIDEzMjEwLCBVU0E&key=AIzaSyAld9bHnu2Bust4-MTCdETeP-wi2BJHM4M" allowfullscreen>
+        </iframe>
+        <p>WEB EARTH COOP. | 403 EUCLID AVE. | SYRACUSE, NY 13023 | WEBEARTHCOOP.NET | 315 - 555 - 1600</p>
+      </section>
+      </div>
+    </div>
+  </div>
 
 	<!-- FOOTER -->
 	<footer>
@@ -118,9 +173,11 @@ We believe this website would become a staple to the daily lives of its users. A
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../js/bootstrap.min.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/contact.js"></script>
 
 
 </body>

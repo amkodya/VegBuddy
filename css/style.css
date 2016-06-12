@@ -8,7 +8,8 @@ style.css
 /************************************************************ MAIN PAGE ************************************************************/
 
 body { font-family: 'Roboto Condensed', sans-serif; font-size: 12pt; }
-h2, h3, h4 { color: #8AD37F; font-size: 14pt; font-weight: bold; text-transform: uppercase;}
+h1, h2, h3, h4 { color: #8AD37F; font-size: 14pt; font-weight: bold; text-transform: uppercase;}
+h1 {color: #000; font-size: 30pt;}
 h3, h5 { color: #fff;}
 h4 { color: #8AD37F; }
 h5 { font-size: 12pt; }
@@ -34,7 +35,7 @@ header li a:hover { background-color: none; }
 #subnav ul li { margin-right: 2%; }
 
 /* vegweek */
-#vegweek, #slider, #about { background: rgba(17,244,216, .2); width: 21.5%; height: 30em; padding: 0; float: left; 
+#vegweek, #slider { background: rgba(17,244,216, .2); width: 21.5%; height: 30em; padding: 0; float: left; 
 	margin: -.5% 1.8% 2.5% 1.5%; float: left; clear: none; text-align: center; }
 #vegweek img, #vegweek p, #vegweek h2 { padding: 0 10px; }
 #vegweek img { max-width: 190px; max-height: 190px; padding-left: 10px; }
@@ -45,7 +46,7 @@ header li a:hover { background-color: none; }
 /* weekly video */
 #videoweek { float: left; clear: left; margin: -1.5% 0 0 .40%; }
 #videocontent { float: left; clear: none; width: 31.5%; height: 15.888em; margin-right: .2%;  }
-#videoweektext { background: rgba(239,239,27, .2); width: 64.2%; height: auto; padding: 0; float: left; 
+#videoweektext { background: rgba(239,239,27, .2); width: 63.8%; height: auto; padding: 0; float: left; 
 	clear: none; text-align: center; margin-left: 1%; }
 #videoweektext h3 { background-color: #EFEF1B; display: block; width: 100%; margin-top: 0; padding: 3px 0; }
 #videoweektext p { padding: 5px;}
@@ -56,10 +57,11 @@ header li a:hover { background-color: none; }
 #slider li { list-style-type: none; }
 
 /*recipes*/
-#indexrecipe h3 { background-color: #21D306; display: block; width: 100%; margin: 0; padding: 3px 0; text-align: center; font-size: 14pt; }
-#indexrecipe { padding: 0; float: left; 
+#indexrecipe h3, #about h3, #privacy h3 { background-color: #21D306; display: block; width: 100%; margin: 0; padding: 3px 0; 
+	text-align: center; font-size: 14pt; }
+#indexrecipe, #about, #privacy { padding: 0; float: left; 
 	margin: 1% 3% 3% 1.5%; clear: none; text-align: center; width: 97%; }
-#indexrec1 img { margin: 6% 2% 0 2%; max-width: 95%; max-height: 20%; }
+#indexrec1 img { margin: 6% 2% 0 2%; max-width: 90%; max-height: 17%; }
 #indexrec1 { width: 32%; height: auto; float: left; clear: none; background: rgba(33,211,6, .2); margin-top: 0; }
 #indexrec1 p { font-size: 9pt; text-align: left;}
 #indexreccta { float: right; clear: both; margin: 3% 0;}
@@ -70,5 +72,17 @@ header li a:hover { background-color: none; }
 #footer h3 { margin-bottom: 2%; clear: both; }
 
 /*about page*/
-#about { width: 80%; margin-left: 10%; }
-#about p { padding: 1% 5% 5%; }
+#about, #privacy { width: 80%; margin-left: 10%; background-color: rgba(33,211,6, .2); }
+#about p, #privacy p { padding: 3% 5% 2% 5%; }
+
+/*sitemap*/
+#sitemap img { max-width: 70%; max-height: 50%; margin: 1% 0 3% 10%; }
+
+/*privacy policy*/
+#privacy { text-align: left; }
+#privacy b { font-size: 13pt; }
+
+/*contact*/
+#contact { margin-bottom: 5%; }
+#contact p { color: #000; text-align: center; font-size: 12pt; }
+#contactmap { margin: 2% 0 0 0; width: 100%; height: 30%; }
