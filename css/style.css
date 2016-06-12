@@ -23,7 +23,7 @@ header a, #subnav a { color: #fff; }
 header li a:hover { background-color: none; }
 #navbar { float: right; clear: right; }
 #divider { color: #fff; margin-top: 3%; font-size: 16pt;}
-#search { height: 60px; float: right; clear: both; margin: -13% 2% -1% 0; }
+#search { height: 60px; float: right; clear: both; margin: -12% 2% -1% 0; }
 #search #searchbox { width: 200px; height: 34px; border-radius: 5px; border: none; margin-top: 1%; }
 #socmedicon { width: 20px; height: 20px; }
 
@@ -34,18 +34,18 @@ header li a:hover { background-color: none; }
 #subnav ul li { margin-right: 2%; }
 
 /* vegweek */
-#vegweek, #slider { background: rgba(17,244,216, .2); width: 21.5%; height: 30em; padding: 0; float: left; 
+#vegweek, #slider, #about { background: rgba(17,244,216, .2); width: 21.5%; height: 30em; padding: 0; float: left; 
 	margin: -.5% 1.8% 2.5% 1.5%; float: left; clear: none; text-align: center; }
 #vegweek img, #vegweek p, #vegweek h2 { padding: 0 10px; }
 #vegweek img { max-width: 190px; max-height: 190px; padding-left: 10px; }
 #vegweek h2 { margin: 3% 0 1% 0; }
-#vegweek h3 { background-color: #11F4D8; display: block; width: 100%; margin-top: 0; padding: 3px 0; }
+#vegweek h3, #about h3 { background-color: #11F4D8; display: block; width: 100%; margin-top: 0; padding: 3px 0; }
 #vegweek p { font-size: 12pt; }
 
 /* weekly video */
 #videoweek { float: left; clear: left; margin: -1.5% 0 0 .40%; }
-#videocontent { float: left; clear: none; width: 31.5%; height: 14.988em; margin-right: .2%;  }
-#videoweektext { background: rgba(239,239,27, .2); width: 60.5%; height: auto; padding: 0; float: left; 
+#videocontent { float: left; clear: none; width: 31.5%; height: 15.888em; margin-right: .2%;  }
+#videoweektext { background: rgba(239,239,27, .2); width: 64.2%; height: auto; padding: 0; float: left; 
 	clear: none; text-align: center; margin-left: 1%; }
 #videoweektext h3 { background-color: #EFEF1B; display: block; width: 100%; margin-top: 0; padding: 3px 0; }
 #videoweektext p { padding: 5px;}
@@ -66,5 +66,9 @@ header li a:hover { background-color: none; }
 
 /*footer*/
 #footer { background-color: #11F4D8; text-align: center; float: left; clear: both; width: 100%; height: auto; }
-#footer ul { margin: 1% 0 1% 18%; }
+#footer ul { margin: 1% 0 1% 21%; }
 #footer h3 { margin-bottom: 2%; clear: both; }
+
+/*about page*/
+#about { width: 80%; margin-left: 10%; }
+#about p { padding: 1% 5% 5%; }

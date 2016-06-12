@@ -4,3 +4,260 @@ recipes.html
 *************
  6/2/16
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Vegan Social Network">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VegBuddy - The New Hub for Vegans Everywhere</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+<script>
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+
+</script>
+
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header>
+		<div class="container" id="headercust">
+        	<div class="navbar-header">
+				<img id="mainlogo" src="../images/white_logo.png"><br>
+				<h5>The New Hub for Vegans Everywhere</h5>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            	<span class="sr-only">Toggle navigation</span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+         		</button>
+          	</div>
+
+       		<div id="navbar" class="collapse navbar-collapse">
+        		<ul class="nav navbar-nav">
+            		<li class="active"><!--<img src="user_pic.png"--><a href="#">Hello Username!</a></li>
+            		<li id="divider">&nbsp;|&nbsp;</li>
+            		<li><a href="#about">3 Messages</a></li>
+            		<li id="divider">&nbsp;|&nbsp;</li>
+            		<li><a href="#contact">Logout</a></li>
+        		</ul>
+    		</div><!--/.nav-collapse -->
+    	
+    		<div id="search">
+				<form id="newsearch" method="get" action="http://www.google.com">
+    			<a href="https://www.facebook.com/VegBuddy"><img id="socmedicon" src="../images/socmedindex-01.png"></a>
+    			<a href="https://www.twitter.com/VegBuddy"><img id="socmedicon" style="margin:0 20px 0 5px;" 
+    				src="../images/socmedindex-02.png"></a>
+		        	<input type="text" id="searchbox" placeholder="&nbsp;&nbsp;SEARCH VEGBUDDY" style="color:#d4d4d4;"></input>
+		        	<button type="submit" class="btn btn-primary" aria-label="Left Align">
+  						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navbar navbar-inverse" id="subnav">
+  		<ul class="nav navbar-nav">
+  			<li style="margin-left:2%;"><a href="../index.html">Home</a></li>
+  			<li class="dropdown">
+  				<a href="recipes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+  				aria-haspopup="true" aria-expanded="false">Recipes<span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+            		<li><a href="Views/recipes.html#breakfast">Breakfast</a></li>
+            		<li><a href="#">Lunch</a></li>
+            		<li><a href="#">Dinner</a></li>
+            		<li><a href="#">Dessert</a></li>
+            		<li><a href="#">Snacks</a></li>
+            		<li><a href="#">Appetizers</a></li>
+            		<li><a href="#">Drinks</a></li>
+          		</ul>
+  			</li>
+  			<li><a href="#">Users</a></li>
+  			<li><a href="#">Chatrooms</a></li>
+  		</ul>
+	</nav>
+
+	<!--VEGAN OF THE WEEK -->
+		<div id="vegweek" class="container">              
+			<h3>VEGAN OF THE WEEK</h3>
+			<img src="../images/veg_week.jpg">
+			<h2>ALLISON MCKENNA</h2>
+			<p>She has been a vegan for several years. Allison spends her free time working in animal shelters and dog rescues. Allison
+				has rescued over 50 pets in her home town from busy city streets, abusive homes, etc. She devotes her life to being
+				an advocate for animals and loves every second of it. She claims her love of animals ultimately lead her to starting
+				a vegan lifestyle. "It just made sense" Allison says.</p>
+		</div>
+
+	<!-- SLIDER -->
+		<div class="container" id="slider">
+	<!--		<ul class="bxslider" >
+  			<li> --><img id="caropic" src="../images/caro_01.jpg"> <!-- </li>
+  				<li><img id="caropic" src="../images/caro_02.jpg"></li>
+  				<li><img id="caropic" src="../images/caro_03.jpg"></li>
+  				<li><img id="caropic" src="../images/caro_04.jpg"></li>
+  		
+			</ul> -->
+		</div> 
+	
+
+	<!-- VIDEO OF THE WEEK -->
+	<div class="container" id="videoweek">
+		<iframe id="videocontent" src="https://www.youtube.com/embed/hrb_3YxBOo8" frameborder="0" allowfullscreen></iframe>
+		<div id="videoweektext" class="container">              
+			<h3>VIDEO OF THE WEEK</h3>
+			<p>The footage and photographs you will see in this video are from captive animals who were rescued and/or are being rehabilitated at The Wild Animal Sanctuary in Keenesburg, Colorado (http://www.wildanimalsanctuary.org). Their setup is an elevated platform that allows you a unique perspective on a wide open divided enclosure where animals tend to roam as free as they can within the well kept confines of this amazing facility. There are plenty of reviews for this place, and some of you will get it and some of you won't. The point is that this facility exists because there is a need for it, and we were happy to contribute our dollars to help them keep doing what they are doing. The song is a U2 song called "One". I felt it was fitting considering we are all a part of one planet. Hopefully more and more of us will realize this as time goes by. Whatever your take on what should live where and how it should happen, I hope you enjoy the footage, the images, the song, or all just the whole compilation in general!</p>
+		</div>
+	</div>
+
+	<!-- RECIPES -->
+
+	<!--recipe 1-->
+	<div id="indexrecipe" class="container">           
+		<h3>RECIPE OF THE WEEK</h3>
+		
+		<!--rec1-->
+		<div class="container" id="indexrec1" style="margin-right: 2%;"> 
+			<img src="../images/indexrec1.jpg">
+			<h4>Three Bean Chili</h4>
+			<p><b>INGREDIENTS</b><br>
+				1 tSP plus 1/4 cup extra-virgin olive oil<br>
+				1 small yellow onion, chopped<br>
+				2 carrots, diced<br>
+				1 14.5-ounce can diced tomatoes, including liquid<br>
+				kosher salt and black pepper<br>
+				1 15.5-ounce can chickpeas, rinsed and drained<br>
+				1 15.5-ounce can cannellini beans, rinsed and drained<br>
+				1 15.5-ounce can kidney beans, rinsed and drained<br>
+				1 clove garlic, finely chopped<br>
+				3tablespoons pine nuts, chopped<br>
+				1 cup fresh flat-leaf parsley, chopped<br>
+				crusty bread (optional)<br><br>
+			<b>DIRECTIONS</b><br>
+				Heat 1 tablespoon of the oil in a large saucepan over
+				medium-high heat. Add the onion and carrots and
+				cook until tender, about 5 minutes.<br>
+				Stir in the tomatoes and their liquid, 2 cups water, 1
+				1⁄2 teaspoons salt, and 1⁄2 teaspoon pepper and bring
+				to a boil.<br>
+				Add the chickpeas and cannellini and kidney beans
+				and cook until heated through, about 3 minutes.<br>
+				Combine the garlic, pine nuts, parsley, remaining 1⁄4
+				cup oil, 1⁄4 teaspoon salt, and 1⁄8 teaspoon pepper in a
+				small bowl.
+				<br>Divide the chili among individual bowls and top with
+				the pesto. Serve with the bread, if desired.
+			</p>
+		</div>  
+
+		<!--rec2-->
+		<div class="container" id="indexrec1" style="margin-right: 2%;"> 
+			<img src="../images/indexrec1.jpg">
+			<h4>Three Bean Chili</h4>
+			<p><b>INGREDIENTS</b><br>
+				1 tSP plus 1/4 cup extra-virgin olive oil<br>
+				1 small yellow onion, chopped<br>
+				2 carrots, diced<br>
+				1 14.5-ounce can diced tomatoes, including liquid<br>
+				kosher salt and black pepper<br>
+				1 15.5-ounce can chickpeas, rinsed and drained<br>
+				1 15.5-ounce can cannellini beans, rinsed and drained<br>
+				1 15.5-ounce can kidney beans, rinsed and drained<br>
+				1 clove garlic, finely chopped<br>
+				3tablespoons pine nuts, chopped<br>
+				1 cup fresh flat-leaf parsley, chopped<br>
+				crusty bread (optional)<br><br>
+			<b>DIRECTIONS</b><br>
+				Heat 1 tablespoon of the oil in a large saucepan over
+				medium-high heat. Add the onion and carrots and
+				cook until tender, about 5 minutes.<br>
+				Stir in the tomatoes and their liquid, 2 cups water, 1
+				1⁄2 teaspoons salt, and 1⁄2 teaspoon pepper and bring
+				to a boil.<br>
+				Add the chickpeas and cannellini and kidney beans
+				and cook until heated through, about 3 minutes.<br>
+				Combine the garlic, pine nuts, parsley, remaining 1⁄4
+				cup oil, 1⁄4 teaspoon salt, and 1⁄8 teaspoon pepper in a
+				small bowl.
+				<br>Divide the chili among individual bowls and top with
+				the pesto. Serve with the bread, if desired.
+			</p>
+		</div>  
+		<!--rec1-->
+		<div class="container" id="indexrec1"> 
+			<img src="../images/indexrec1.jpg">
+			<h4>Three Bean Chili</h4>
+			<p><b>INGREDIENTS</b><br>
+				1 tSP plus 1/4 cup extra-virgin olive oil<br>
+				1 small yellow onion, chopped<br>
+				2 carrots, diced<br>
+				1 14.5-ounce can diced tomatoes, including liquid<br>
+				kosher salt and black pepper<br>
+				1 15.5-ounce can chickpeas, rinsed and drained<br>
+				1 15.5-ounce can cannellini beans, rinsed and drained<br>
+				1 15.5-ounce can kidney beans, rinsed and drained<br>
+				1 clove garlic, finely chopped<br>
+				3tablespoons pine nuts, chopped<br>
+				1 cup fresh flat-leaf parsley, chopped<br>
+				crusty bread (optional)<br><br>
+			<b>DIRECTIONS</b><br>
+				Heat 1 tablespoon of the oil in a large saucepan over
+				medium-high heat. Add the onion and carrots and
+				cook until tender, about 5 minutes.<br>
+				Stir in the tomatoes and their liquid, 2 cups water, 1
+				1⁄2 teaspoons salt, and 1⁄2 teaspoon pepper and bring
+				to a boil.<br>
+				Add the chickpeas and cannellini and kidney beans
+				and cook until heated through, about 3 minutes.<br>
+				Combine the garlic, pine nuts, parsley, remaining 1⁄4
+				cup oil, 1⁄4 teaspoon salt, and 1⁄8 teaspoon pepper in a
+				small bowl.
+				<br>Divide the chili among individual bowls and top with
+				the pesto. Serve with the bread, if desired.
+			</p>
+		</div><br><br>
+			<div class="btn-group btn-group-lg" id="indexreccta">
+  			<button type="button" class="btn btn-primary">
+  				SEE MORE RECIPIES
+  				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			</button>
+ 		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container" id="footer">
+			<ul class="nav navbar-nav" id="footernav">
+				<li><a href="about.html">ABOUT US</a></li>
+				<li><a href="privacy.html">PRIVACY POLICY</a></li>
+				<li><a href="sitemap.html">SITE MAP</a></li>
+				<li><a href="useragree.html">USER AGREEMENT</a></li>
+				<li><a href="contact.html">CONTACT US</a></li><br>
+			</ul><br><br>
+			<h3>COPYRIGHT 2016 WEB EARTH COOP. 403 EUCLID AVE. SYRACUSE, NY 13023 WEBEARTHCOOP.NET</h3>
+		</div>
+	</footer>
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
