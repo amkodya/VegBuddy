@@ -88,7 +88,7 @@ header li a:hover { background-color: none; }
 #contactmap { margin: 2% 0 0 0; width: 100%; height: 30%; }
 
 /*login*/
-#login { margin: 2% 5% 5% 25%; }
+#login { margin: 2% 5% 3% 25%; }
 #login #loginform { background-color: #EFEF1B; float: left; clear: none; width: 35%; margin-right: 2%; padding: 4% 2% 4% 3%; }
 #loginform input { width: 95%; height: 50px; border: none; border-radius: 5px; margin-bottom: 8%; }
 #login h3 { text-align: left; width: 35%; }
