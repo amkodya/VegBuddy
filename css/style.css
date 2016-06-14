@@ -17,16 +17,16 @@ a { font-size: 18pt;}
 
 /* header */
 header { background-color: #7ED305; }
-header h5  { margin: -11.5% 0 10% 44%; }
-#mainlogo { max-height: 380px; max-width: 500px; margin: 5% 0 3% 3%;}
+header h5  { margin: -11.5% 0 10% 44%; font-size: 8pt;}
+#mainlogo { max-height: 10em; max-width: 15em; margin: 5% 0 3% 3%;}
 #headercust { background-color: #7ED305; position: relative; top: 0; left: 0; width: 100%; }
 header a, #subnav a { color: #fff; }
 header li a:hover { background-color: none; }
-#navbar { float: right; clear: right; }
-#divider { color: #fff; margin-top: 3%; font-size: 16pt;}
-#search { height: 60px; float: right; clear: both; margin: -12% 2% -1% 0; }
+#navbar { float: right; clear: none;  margin-top: .5em; }
+#divider { color: #fff; margin-top: .5em; font-size: 16pt;}
+#search { height: 60px; float: right; clear: none;  margin-top: .5em; }
 #search #searchbox { width: 200px; height: 34px; border-radius: 5px; border: none; margin-top: 1%; }
-#socmedicon { width: 35px; height: 35px; }
+#socmedicon { width: .9em; height: .9em; }
 
 /*subnav*/
 #subnav { border-radius: 0; background-color: rgba(126,211,5, .2); border: none; }
@@ -35,8 +35,9 @@ header li a:hover { background-color: none; }
 #subnav ul li { margin-right: 2%; }
 
 /* vegweek */
-#vegweek, #slider { background: rgba(17,244,216, .2); width: 21.5%; height: 30em; padding: 0; float: left; 
-	margin: -.5% 1.8% 2.5% 1.5%; float: left; clear: none; text-align: center; }
+#toprow { width: 100%; margin-left: 0; }
+#vegweek, #slider { background: rgba(17,244,216, .2); width: 27%; height: 30em; padding: 0; float: left; 
+	margin: -.5% 1.8% .5em 0; float: left; clear: none; text-align: center; }
 #vegweek img, #vegweek p, #vegweek h2 { padding: 0 10px; }
 #vegweek img { max-width: 190px; max-height: 190px; padding-left: 10px; }
 #vegweek h2 { margin: 3% 0 1% 0; }
@@ -44,15 +45,15 @@ header li a:hover { background-color: none; }
 #vegweek p { font-size: 12pt; }
 
 /* weekly video */
-#videoweek { float: left; clear: left; margin: -1.5% 0 0 .40%; }
-#videocontent { float: left; clear: none; width: 31.5%; height: 15.888em; margin-right: .2%;  }
-#videoweektext { background: rgba(239,239,27, .2); width: 63.8%; height: auto; padding: 0; float: left; 
-	clear: none; text-align: center; margin-left: 1%; }
+#videoweek { float: left; clear: left; width: 85%; }
+#videocontent { float: left; clear: none; width: 37%; height: 15.888em; margin-right: .9%;  }
+#videoweektext { background: rgba(239,239,27, .2); width: 60%; height: auto; padding: 0; float: left; 
+	clear: none; text-align: center; }
 #videoweektext h3 { background-color: #EFEF1B; display: block; width: 100%; margin-top: 0; padding: 3px 0; }
 #videoweektext p { padding: 5px;}
 
 /* pic carousel */
-#slider { float: left; clear: right; margin-left: -.7%; width: 56.7%; height: 30em;}
+#slider { float: left; clear: none; margin-left: -.7%; width: 55%; height: 30em;}
 #caropic { width: 100%; height: 100%; margin-left: -.8%;}
 #slider li { list-style-type: none; }
 
