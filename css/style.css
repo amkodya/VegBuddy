@@ -108,6 +108,8 @@ header li a:hover { background-color: none; }
 #recrecipe h3 { text-align: left; }
 #siderec a, #recrecipe h3, #dashboardlinks a, #dashboard h3 { padding-left: .8em; }
 #siderec a b, #dashboard a b {color: #8AD37F; font-size: 24pt;}
+#smallrecipepagepics { max-width: 5em; max-height: 4em; margin-right: 1em;}
+#collapseOne p { margin-left: 1em; }
 
 /* dashboard */
 #dashwelc { float: left; clear: none; width: 20%; height: 30em; }
