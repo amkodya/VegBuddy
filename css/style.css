@@ -36,29 +36,29 @@ header li a:hover { background-color: none; }
 
 /* vegweek */
 #toprow { width: 100%; margin-left: 0; }
-#vegweek, #slider, #dashwelc { background: rgba(17,244,216, .2); width: 27%; height: 30em; padding: 0; float: left; 
+#vegweek, #slider, #dashwelc, #featrec, #vidrec { background: rgba(17,244,216, .2); width: 27%; height: 30em; padding: 0; float: left; 
 	margin: -.5% 1.8% .5em 0; float: left; clear: none; text-align: center; }
 #vegweek img, #vegweek p, #vegweek h2 { padding: 0 10px; }
-#vegweek img { max-width: 190px; max-height: 190px; padding-left: 10px; }
+#vegweek img, #featrec img { max-width: 190px; max-height: 190px; padding-left: 10px; }
 #vegweek h2 { margin: 3% 0 1% 0; }
-#vegweek h3, #about h3, #dashwelc h3 { background-color: #11F4D8; display: block; width: 100%; margin-top: 0; padding: 3px 0; }
+#vegweek h3, #about h3, #dashwelc h3, #featrec h3 { background-color: #11F4D8; display: block; width: 100%; margin-top: 0; padding: 3px 0; }
 #vegweek p { font-size: 12pt; }
 
 /* weekly video */
 #videoweek { float: left; clear: left; width: 85%; }
-#videocontent { float: left; clear: none; width: 37%; height: 15.888em; margin-right: .9%;  }
+#videocontent { float: left; clear: none; width: 37%; height: 17.888em; margin-right: .9%;  }
 #videoweektext { background: rgba(239,239,27, .2); width: 60%; height: auto; padding: 0; float: left; 
 	clear: none; text-align: center; }
 #videoweektext h3 { background-color: #EFEF1B; display: block; width: 100%; margin-top: 0; padding: 3px 0; }
 #videoweektext p { padding: 5px;}
 
 /* pic carousel */
-#slider { float: left; clear: none; margin-left: -.7%; width: 55%; height: 30em;}
+#slider, #vidrec { float: left; clear: none; margin-left: -.7%; width: 55%; height: 30em;}
 #caropic { width: 100%; height: 100%; margin-left: -.8%;}
 #slider li { list-style-type: none; }
 
 /*recipes*/
-#indexrecipe h3, #about h3, #privacy h3, #login h3, #recrecipe h3, #dashboard h3 { background-color: #21D306; display: block; width: 100%; margin: 0; padding: 3px 0; 
+#indexrecipe h3, #about h3, #privacy h3, #login h3, #recrecipe h3, #dashboard h3, #vidrec h3 { background-color: #21D306; display: block; width: 100%; margin: 0; padding: 3px 0; 
 	text-align: center; font-size: 14pt; }
 #indexrecipe, #about, #privacy { padding: 0; float: left; 
 	margin: 1% 3% 3% 1.5%; clear: none; text-align: center; width: 97%; }
@@ -102,14 +102,20 @@ header li a:hover { background-color: none; }
 
 /* RECIPES */
 #accordion h3 { color: #000; }
-#recrecipe, #dashboard { float: left; height: 30em; margin-bottom: 5%; }
+#recrecipe, #dashboard { float: left; height: auto; margin-bottom: 5%; }
 #recrecipe #accordion { width: 80%; float: left; clear: none;}
-#siderec, #dashboardlinks { float: left; clear: none; width: 20%; background-color: #EFEF1B; height: 30em; }
+#siderec, #dashboardlinks { float: left; clear: none; width: 20%; background-color: #EFEF1B; height: 80em; }
 #recrecipe h3 { text-align: left; }
 #siderec a, #recrecipe h3, #dashboardlinks a, #dashboard h3 { padding-left: .8em; }
 #siderec a b, #dashboard a b {color: #8AD37F; font-size: 24pt;}
 #smallrecipepagepics { max-width: 5em; max-height: 4em; margin-right: 1em;}
-#collapseOne p { margin-left: 1em; }
+#accordion p { margin-left: 1em; }
+#featrec { overflow: scroll; text-align: left; }
+#featrec h3, #featrec h2 { text-align: center; }
+#featrec img { margin-left: 4em; }
+#featrec h2, #featrec p, #vidrec p { margin: 1em;}
+#vidrec { background-color: rgba(33,211,6, .2); width: 69%; text-align: left; overflow: scroll; }
+#vidrecvid { float: left; clear: none; height: 18em; width: 22em; margin-right: 1em; }
 
 /* dashboard */
 #dashwelc { float: left; clear: none; width: 20%; height: 30em; }
