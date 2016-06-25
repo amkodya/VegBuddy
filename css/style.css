@@ -128,3 +128,4 @@ header li a:hover { background-color: none; }
 
 /*userpage*/
 #privacy table tr:nth-child(even) { background-color: rgba(33,211,6, .3); }
+#privacy table tr:nth-child(even):hover { background-color: #fff; }
