@@ -45,7 +45,7 @@ header li a:hover { background-color: none; }
 #vegweek p { font-size: 12pt; }
 
 /* weekly video */
-#videoweek { float: left; clear: left; width: 85%; }
+#videoweek { float: left; clear: left; width: 85%; margin-top: 1em;}
 #videocontent { float: left; clear: none; width: 37%; height: 17.888em; margin-right: .9%;  }
 #videoweektext { background: rgba(239,239,27, .2); width: 60%; height: auto; padding: 0; float: left; 
 	clear: none; text-align: center; }
