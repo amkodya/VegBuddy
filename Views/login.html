@@ -1,9 +1,25 @@
+<?php
+session_start();
+// Do Something
+?>
 <!--VEG BUDDY 
 *************
 login.html
 *************
  6/2/16
 -->
+
+<?php
+
+$_SESSION['login_user']= $username;  // Initializing Session with value of PHP Variable
+echo $_SESSION['login_user'];
+
+include('login.php'); // Includes Login Script
+
+if(isset($_SESSION['login_user'])){
+header("location: profile.php");
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -96,12 +112,12 @@ $(document).ready(function(){
 	<!--LOGIN FORM -->
 	<div class="container" id="login">
 			<h3>&nbsp;&nbsp;&nbsp;LOGIN</h3>
-		<form id="loginform">
+		<form id="loginform" action="" method="post">
 			<label>Username</label><br>
-  			<input type="text" name="firstname"><br></input>
+  			<input type="text" name="username"><br></input>
   			<label>Password</label><br>
-  			<input type="text" name="lastname"></input>
-  					<a href="Views/login.html">
+  			<input type="password" name="password"></input>
+  					<a href="inbox.html">
 			<div class="btn-group btn-group-lg" id="regcta">
   				<button type="button" class="btn btn-primary">
   					Login
@@ -109,6 +125,7 @@ $(document).ready(function(){
 				</button>
  			</div>
  		</a>
+    <span><?php echo $error; ?></span>
 		</form>
 		<h4>Don’t have an account?<br>
 		SIGN UP TODAY!</h4><br>

@@ -1,10 +1,46 @@
+<?php session_start(); ?>
 <!--VEG BUDDY 
 *************
 signup.html
 *************
  6/2/16
 -->
+<?php
 
+if(isset($_SESSION["message"])) {
+    echo $_SESSION['message'];
+    unset($_SESSION['message']);
+}
+
+echo "<br /><br /><br />";
+
+$user="root";  //sets the username of the server to  variables
+$pass="root";   //sets the password of the username to the variables
+$dbh = new PDO('mysql:host=localhost;dbname=vegbuddy;port=8888', $user, $pass); //PDO set into var $dbh - query string links to server and we're given username and pw
+
+if ($_SERVER['REQUEST_METHOD'] =='POST') {  // if the request method is a POST (it is)
+
+        $dbh = new PDO('mysql:host=localhost;dbname=vegbuddy;port=8888', $user, $pass);
+        #client name, phone number, email, website
+
+        $firstname = $_POST['firstname']; //get POST values from form - first name
+        $lastname = $_POST['lastname']; //get post values from form - lastname
+        $gender = $_POST['gender']; //get post values from form - gender
+        $zip = $_POST['zip']; //get post values from form - zip
+
+        $stmt = $dbh->prepare("INSERT INTO users (firstname, lastname, email, username, password, gender, zip) VALUES (:firstname, :lastname, :email, :username, :password, :gender, :zip);");  //prepare statement calling clients table and setting var for the different columns
+        $stmt->bindParam(':firstname', $firstname); //sets binding paramater that binds sql data to php data - firstname
+        $stmt->bindParam(':lastname', $lastname); //sets binding paramater that binds sql data to php data - lastname
+        $stmt->bindParam(':email', $email); //sets binding paramater that binds sql data to php data - email
+        $stmt->bindParam(':username', $username); //sets binding paramater that binds sql data to php data - username
+        $stmt->bindParam(':password', $password); //sets binding paramater that binds sql data to php data - password
+        $stmt->bindParam(':gender', $gender); //sets binding paramater that binds sql data to php data - lastname
+        $stmt->bindParam(':zip', $zip); //sets binding paramater that binds sql data to php data - zip
+        $stmt->execute();  //executes the code to transform sql to php
+
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,14 +52,6 @@ signup.html
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-
-<script>
-
-$(document).ready(function(){
-  $('.bxslider').bxSlider();
-});
-
-</script>
 
 </head>
 <body>
@@ -162,7 +190,7 @@ $(document).ready(function(){
             <div class="control-group">
               <!-- Button -->
               <div class="controls">
-                <button class="btn btn-primary btn-send btn-group-lg">Register</button>
+              <a href="inbox.html"><button class="btn btn-primary btn-send btn-group-lg">Register</button></a>
               </div>
             </div>
           </fieldset>

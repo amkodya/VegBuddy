@@ -93,7 +93,8 @@ header li a:hover { background-color: none; }
 #contactmap { margin: 2% 0 0 0; width: 100%; height: 30%; }
 
 /*signup*/
-#signup { margin: 2em 0 3em 23em; }
+#signup { margin: 2em 0 3em 23em; 
+
 
 /*login*/
 #login { margin: 2% 5% 3% 25%; }

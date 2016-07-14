@@ -1,10 +1,43 @@
+<?php session_start(); ?>
 <!--VEG BUDDY 
 *************
 users.html.html
 *************
  6/23/16
 -->
+<?php
 
+if(isset($_SESSION["message"])) {
+    echo $_SESSION['message'];
+    unset($_SESSION['message']);
+}
+
+echo "<br /><br /><br />";
+
+$user="root";  //sets the username of the server to  variables
+$pass="root";   //sets the password of the username to the variables
+$dbh = new PDO('mysql:host=localhost;dbname=vegbuddy;port=8888', $user, $pass); //PDO set into var $dbh - query string links to server and we're given username and pw
+
+if ($_SERVER['REQUEST_METHOD'] =='POST') {  // if the request method is a POST (it is)
+
+        $dbh = new PDO('mysql:host=localhost;dbname=vegbuddy;port=8888', $user, $pass);
+        #client name, phone number, email, website
+
+        $firstname = $_POST['firstname']; //get POST values from form - first name
+        $lastname = $_POST['lastname']; //get post values from form - lastname
+        $gender = $_POST['gender']; //get post values from form - gender
+        $zip = $_POST['zip']; //get post values from form - zip
+
+        $stmt = $dbh->prepare("INSERT INTO clients (firstname, lastname, gender, zip) VALUES (:firstname, :lastname, :gender, :zip);");  //prepare statement calling clients table and setting var for the different columns
+        $stmt->bindParam(':firstname', $firstname); //sets binding paramater that binds sql data to php data - firstname
+        $stmt->bindParam(':lastname', $lastname); //sets binding paramater that binds sql data to php data - lastname
+        $stmt->bindParam(':gender', $gender); //sets binding paramater that binds sql data to php data - gender
+        $stmt->bindParam(':zip', $zip); //sets binding paramater that binds sql data to php data - zip
+        $stmt->execute();  //executes the code to transform sql to php
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,13 +50,7 @@ users.html.html
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 
-<script>
 
-$(document).ready(function(){
-  $('.bxslider').bxSlider();
-});
-
-</script>
 
 </head>
 <body>
@@ -92,118 +119,32 @@ $(document).ready(function(){
   		</ul>
 	</nav>
 
-	<!--VEGAN OF THE WEEK -->
-		<div id="privacy" class="container"> 
+	<?php
+
+    $stmt = $dbh->prepare('SELECT * FROM user order by iduser ASC;');  // selects all information from clients table in sql server in order of ascending clientid's
+    $stmt->execute();     //execute the previous code that has $stmt variable
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);   //the result var is set which is the eviqualent of each line item in the sql server
+    //The parameter means it will return an indexed array with each index containing an associative array of each row – do a var_dump($result); to see the array results
+    //var_dump($result);
+
+    ?>
+
+    <div id="privacy" class="container"> 
 			<h3>VEG BUDDY USERS</h3>             
 			<table class="table table-hover">
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-					<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
+			<tr>
+
+    <?php
+
+
+    foreach  ($result as $row) {  //foreach loop that will itirate through all the results and set them as var row
+        echo '<td>First Name: ' .$row['firstname']. '</br>Last name: ' .$row['lastname']. '<br />Gender: ' .$row['gender']. '<br />Zip: ' . $row['zip'] . '</td>';
+    } //echo out every instance of clientid and also display their name, phone#, email, website and forreach loop will not end unless there is no more data
+
+    ?> <!-- close php code  -->
+
 				</tr>
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-					<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
-				</tr>
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-					<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
-				</tr>
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-					<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
-				</tr>
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-					<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
-				</tr>
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-					<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
-				</tr>
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-					<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
-				</tr>
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-									<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
-				</tr>
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-									<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
-				</tr>
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-									<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
-				</tr>
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-									<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
-				</tr>
-				<tr>
-					<td><img src="userpic.jpg"></td>
-					<td>THIS WILL BE DYNAMIC</td>
-									<td>NAME</td>
-					<td>CITY</td>
-					<td>AGE</td>
-					<td>GENDER</td>
-					<td>SEE PROFILE</td>
-				</tr>
+				
 			</table>
 		</div>
 
