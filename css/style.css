@@ -26,7 +26,7 @@ header li a:hover { background-color: none; }
 #divider { color: #fff; margin-top: .5em; font-size: 16pt;}
 #search { height: 60px; float: right; clear: none;  margin-top: .5em; }
 #search #searchbox { width: 200px; height: 34px; border-radius: 5px; border: none; margin-top: 1%; }
-#socmedicon { width: .9em; height: .9em; }
+#socmed { width: 7.3em; height: 6.5em; margin-bottom: .2em; margin-left: .3em;}
 
 /*subnav*/
 #subnav { border-radius: 0; background-color: rgba(126,211,5, .2); border: none; }
@@ -45,7 +45,7 @@ header li a:hover { background-color: none; }
 #vegweek p { font-size: 12pt; }
 
 /* weekly video */
-#videoweek { float: left; clear: left; width: 85%; margin-top: 1em;}
+#videoweek { float: left; clear: left; width: 100%; margin-top: 1em;}
 #videocontent { float: left; clear: none; width: 37%; height: 17.888em; margin-right: .9%;  }
 #videoweektext { background: rgba(239,239,27, .2); width: 60%; height: auto; padding: 0; float: left; 
 	clear: none; text-align: center; }

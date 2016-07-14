@@ -1,88 +1,16 @@
-<!--VEG BUDDY 
+<?php
+session_start();
+/*--VEG BUDDY 
 *************
-recipes.html
+snacks.php
 *************
- 6/2/16
--->
+ 6/12/16
+  modified on 7/14/16 for PHP transform
+*/
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="description" content="Vegan Social Network">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>VegBuddy - The New Hub for Vegans Everywhere</title>
-<link href="../css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-</head>
-<body>
+ ?>
 
-	<!-- HEADER -->
-	<header>
-		<div class="container" id="headercust">
-        	<div class="navbar-header">
-				<img id="mainlogo" src="../images/white_logo.png"><br>
-				<h5>The New Hub for Vegans Everywhere</h5>
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            	<span class="sr-only">Toggle navigation</span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-         		</button>
-          	</div>
-
-       		<div id="navbar" class="collapse navbar-collapse">
-       			<ul class="nav navbar-nav">
-            		<li class="active"><!--<img src="user_pic.png"--><a href="login.html">Login</a></li>
-            		<li id="divider">&nbsp;|&nbsp;</li>
-            		<li><a href="signup.html">Sign-Up</a></li>
-        		</ul>
-        	<!--	<ul class="nav navbar-nav">
-            		<li class="active"><a href="#">Hello Username!</a></li>
-            		<li id="divider">&nbsp;|&nbsp;</li>
-            		<li><a href="#about">3 Messages</a></li>
-            		<li id="divider">&nbsp;|&nbsp;</li>
-            		<li><a href="#contact">Logout</a></li>
-        		</ul> -->
-    		</div><!--/.nav-collapse -->
-    	
-    		<div id="search">
-				<form id="newsearch" method="get" action="http://www.google.com">
-    			<a href="https://www.facebook.com/VegBuddy"><img id="socmedicon" src="../images/socmedindex-01.png"></a>
-    			<a href="https://www.twitter.com/VegBuddy"><img id="socmedicon" style="margin:0 20px 0 5px;" 
-    				src="../images/socmedindex-02.png"></a>
-		        	<input type="text" id="searchbox" placeholder="&nbsp;&nbsp;SEARCH VEGBUDDY" style="color:#d4d4d4;"></input>
-		        	<button type="submit" class="btn btn-primary" aria-label="Left Align">
-  						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-					</button>
-				</form>
-			</div>
-		</div>
-	</header>
-
-	<nav class="navbar navbar-inverse" id="subnav">
-  		<ul class="nav navbar-nav">
-  			<li style="margin-left:2%;"><a href="../index.html">Home</a></li>
-  			<li class="dropdown">
-  				<a href="recipes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" 
-  				aria-haspopup="true" aria-expanded="false">Recipes<span class="caret"></span></a>
-          		<ul class="dropdown-menu">
-                <li><a href="breakfast.html">Breakfast</a></li>
-                <li><a href="lunch.html">Lunch</a></li>
-                <li><a href="dinner.html">Dinner</a></li>
-                <li><a href="dessert.html">Dessert</a></li>
-                <li><a href="snacks.html">Snacks</a></li>
-                <li><a href="appetizers.html">Appetizers</a></li>
-                <li><a href="drinks.html">Drinks</a></li>
-          		</ul>
-  			</li>
-  			<li><a href="users.html">Users</a></li>
-  		<!--	<li><a href="#">Chatrooms</a></li> -->
-  		</ul>
-	</nav>
-
+<?php include("../models/header.php"); ?>
 
   <!--REC OF THE WEEK -->
   <div class="container" id="toprow">
@@ -160,22 +88,22 @@ recipes.html
   <div id="recrecipe" class="container">
   <h3>RECIPES</h3>
     <div id="siderec">           
-      <a href="breakfast.html#recipe">Breakfast</a><br>
-      <a href="lunch.html#recipe">Lunch</a><br>
-      <a href="dinner.html#recipe">Dinner</a><br>
-      <a href="dessert.html#recipe">Dessert</a><br>
-      <a href="appitizers.html#recipe">Appitzers</a><br>
-      <a href="snacks.html#recipe">Snacks</a><br>
-      <a href="drinks.html#recipe"><b>Drinks</b></a>
+      <a href="breakfast.php#recipe">Breakfast</a><br>
+      <a href="lunch.php#recipe">Lunch</a><br>
+      <a href="dinner.php#recipe">Dinner</a><br>
+      <a href="dessert.php#recipe">Dessert</a><br>
+      <a href="appetizers.php#recipe">Appitzers</a><br>
+      <a href="snacks.php#recipe"><b>Snacks</b></a><br>
+      <a href="drinks.php#recipe">Drinks</a>
     </div>
 
-        <div id="accordion" role="tablist" aria-multiselectable="true">
+    <div id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingOne">
           <h4 class="panel-title">
             <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <img src="../images/chochempsmoothie.png" id="smallrecipepagepics">
-              Creamy Chocolate Hemp Smoothie for Two
+              <img src="../images/veganquesodip.jpg" id="smallrecipepagepics">
+              FULLY LOADED VEGAN QUESO DIP
             </a>
           </h4>
         </div>
@@ -205,8 +133,8 @@ recipes.html
       <div class="panel-heading" role="tab" id="headingTwo">
         <h4 class="panel-title">
           <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <img src="../images/pinacoladasmoothie.jpg" id="smallrecipepagepics">
-            Vegan Piña Colada Smoothie
+            <img src="../images/grilledscallionpancakes.jpg" id="smallrecipepagepics">
+            GRILLED SCALLION PANCAKES
           </a>
         </h4>
       </div>
@@ -263,8 +191,8 @@ recipes.html
     <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title">
         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <img src="../images/chamstrawberryquinoasmoothie.jpg" id="smallrecipepagepics">
-          Chamomile, Strawberry, and Quinoa Smoothie
+          <img src="../images/thaicococurrychips.jpg" id="smallrecipepagepics">
+          THAI COCONUT RED CURRY POTATO CHIPS
         </a>
       </h4>
     </div>
@@ -307,8 +235,8 @@ recipes.html
     <div class="panel-heading" role="tab" id="headingFour">
       <h4 class="panel-title">
         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          <img src="../images/chocraspfigsmoothie.jpg" id="smallrecipepagepics">
-          Chocolate Raspberry Fig Smoothie
+          <img src="../images/buffalocauli.jpg" id="smallrecipepagepics">
+         CRISPY BUFFALO FRIED CAULIFLOWER
         </a>
       </h4>
     </div>
@@ -339,30 +267,7 @@ recipes.html
 
   </div>
 
-
-	<!-- FOOTER -->
-	<footer>
-		<div class="container" id="footer">
-			<ul class="nav navbar-nav" id="footernav">
-				<li><a href="about.html">ABOUT US</a></li>
-				<li><a href="privacy.html">PRIVACY POLICY</a></li>
-				<li><a href="sitemap.html">SITE MAP</a></li>
-				<li><a href="useragree.html">USER AGREEMENT</a></li>
-				<li><a href="contact.html">CONTACT US</a></li><br>
-			</ul><br><br>
-			<h3>COPYRIGHT 2016 WEB EARTH COOP. 403 EUCLID AVE. SYRACUSE, NY 13023 WEBEARTHCOOP.NET</h3>
-		</div>
-	</footer>
-
-
-
-
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../js/bootstrap.min.js"></script>
+<?php include("../models/footer.php"); ?>
 
 
 </body>

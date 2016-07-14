@@ -1,9 +1,4 @@
-<!--VEG BUDDY 
-*************
-about.html
-*************
- 6/12/16
--->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,14 +11,6 @@ about.html
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-
-<script>
-
-$(document).ready(function(){
-  $('.bxslider').bxSlider();
-});
-
-</script>
 
 </head>
 <body>
@@ -46,7 +33,7 @@ $(document).ready(function(){
             <ul class="nav navbar-nav">
                 <li class="active"><!--<img src="user_pic.png"--><a href="login.html">Login</a></li>
                 <li id="divider">&nbsp;|&nbsp;</li>
-                <li><a href="signup.html">Sign-Up</a></li>
+                <li><a href="signup.php">Sign-Up</a></li>
             </ul>
           <!--  <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Hello Username!</a></li>
@@ -59,9 +46,6 @@ $(document).ready(function(){
     	
     		<div id="search">
 				<form id="newsearch" method="get" action="http://www.google.com">
-    			<a href="https://www.facebook.com/VegBuddy"><img id="socmedicon" src="../images/socmedindex-01.png"></a>
-    			<a href="https://www.twitter.com/VegBuddy"><img id="socmedicon" style="margin:0 20px 0 5px;" 
-    				src="../images/socmedindex-02.png"></a>
 		        	<input type="text" id="searchbox" placeholder="&nbsp;&nbsp;SEARCH VEGBUDDY" style="color:#d4d4d4;"></input>
 		        	<button type="submit" class="btn btn-primary" aria-label="Left Align">
   						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
@@ -87,47 +71,7 @@ $(document).ready(function(){
                 <li><a href="drinks.html">Drinks</a></li>
           		</ul>
   			</li>
-  			<li><a href="users.html">Users</a></li>
+  			<li><a href="users.php">Users</a></li>
   		<!--	<li><a href="#">Chatrooms</a></li> -->
   		</ul>
 	</nav>
-
-	<!--VEGAN OF THE WEEK -->
-		<div id="about" class="container">              
-			<h3>About us</h3>
-		<!--	<h2>What is Veg Buddy?</h2> -->
-			<p>Many people go on the Internet to search for some sort of community to be a part of that relates to their non-Internet lives. There are many niches and communities that form and continue to grow, much in part by meeting and forming a bond via the web. Veganism is has became an increasingly popular lifestyle and its web present is also becoming a growing trend.<br><br>
-
-There are so many websites that are  awesome and informative but I would want to take this information and these intelligent people and put them together in an interactive community; like a Facebook for Vegans, if you will.  I do realize that Facebook has very many groups for Vegans so Veg Buddy would serve as a hub of communication and information. <br><br>
-
-The growing market of vegans that go online for their research would take comfort in knowing they have a one stop shop to speak to other vegans, ask and answer questions and maybe make some like-minded friends. <br><br>
-
-With Veg Buddy, you can add friends and send them messages. Also, you can share recipes, setup meal plans and make grocery lists. Each user can create a profile and on their page, they can post recipes, shopping lists or ask questions that others can reply to. Also, we will feature user videos and recipies on the main page daily.<br><br>
-
-We believe this website would become a staple to the daily lives of its users. Also, if the goal of facilitating an inviting and positive environment, we will also encourage more users to join as the community grows larger.</p>
-		</div>
-
-	<!-- FOOTER -->
-	<footer>
-		<div class="container" id="footer">
-			<ul class="nav navbar-nav" id="footernav">
-				<li><a href="about.html">ABOUT US</a></li>
-				<li><a href="privacy.html">PRIVACY POLICY</a></li>
-				<li><a href="sitemap.html">SITE MAP</a></li>
-				<li><a href="useragree.html">USER AGREEMENT</a></li>
-				<li><a href="contact.html">CONTACT US</a></li><br>
-			</ul><br><br>
-			<h3>COPYRIGHT 2016 WEB EARTH COOP. 403 EUCLID AVE. SYRACUSE, NY 13023 WEBEARTHCOOP.NET</h3>
-		</div>
-	</footer>
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../js/bootstrap.min.js"></script>
-
-
-</body>
-
-</html>
