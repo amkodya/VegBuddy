@@ -1,0 +1,175 @@
+<?php
+session_start();
+// Do Something
+?>
+<!--VEG BUDDY 
+*************
+login.html
+*************
+ 6/2/16
+-->
+
+<?php
+
+$_SESSION['login_user']= $username;  // Initializing Session with value of PHP Variable
+echo $_SESSION['login_user'];
+
+include('login.php'); // Includes Login Script
+
+if(isset($_SESSION['login_user'])){
+header("location: profile.php");
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Vegan Social Network">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VegBuddy - The New Hub for Vegans Everywhere</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+<script>
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+
+</script>
+
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header>
+		<div class="container" id="headercust">
+        	<div class="navbar-header">
+				<img id="mainlogo" src="../images/white_logo.png"><br>
+				<h5>The New Hub for Vegans Everywhere</h5>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            	<span class="sr-only">Toggle navigation</span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+         		</button>
+          	</div>
+
+       		<div id="navbar" class="collapse navbar-collapse">
+       			<ul class="nav navbar-nav">
+            		<li class="active"><!--<img src="user_pic.png"--><a href="login.html">Login</a></li>
+            		<li id="divider">&nbsp;|&nbsp;</li>
+            		<li><a href="signup.html">Sign-Up</a></li>
+        		</ul>
+        	<!--	<ul class="nav navbar-nav">
+            		<li class="active"><a href="#">Hello Username!</a></li>
+            		<li id="divider">&nbsp;|&nbsp;</li>
+            		<li><a href="#about">3 Messages</a></li>
+            		<li id="divider">&nbsp;|&nbsp;</li>
+            		<li><a href="#contact">Logout</a></li>
+        		</ul> -->
+    		</div><!--/.nav-collapse -->
+    	
+    		<div id="search">
+				<form id="newsearch" method="get" action="http://www.google.com">
+    			<a href="https://www.facebook.com/VegBuddy"><img id="socmedicon" src="../images/socmedindex-01.png"></a>
+    			<a href="https://www.twitter.com/VegBuddy"><img id="socmedicon" style="margin:0 20px 0 5px;" 
+    				src="../images/socmedindex-02.png"></a>
+		        	<input type="text" id="searchbox" placeholder="&nbsp;&nbsp;SEARCH VEGBUDDY" style="color:#d4d4d4;"></input>
+		        	<button type="submit" class="btn btn-primary" aria-label="Left Align">
+  						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navbar navbar-inverse" id="subnav">
+  		<ul class="nav navbar-nav">
+  			<li style="margin-left:2%;"><a href="../index.html">Home</a></li>
+  			<li class="dropdown">
+  				<a href="recipes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+  				aria-haspopup="true" aria-expanded="false">Recipes<span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="dinner.html">Dinner</a></li>
+                <li><a href="dessert.html">Dessert</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="appetizers.html">Appetizers</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+          		</ul>
+  			</li>
+  			<li><a href="users.html">Users</a></li>
+  		<!--	<li><a href="#">Chatrooms</a></li> -->
+  		</ul>
+	</nav>
+
+
+	<!--LOGIN FORM -->
+	<div class="container" id="login">
+			<h3>&nbsp;&nbsp;&nbsp;LOGIN</h3>
+		<form id="loginform" action="" method="post">
+			<label>Username</label><br>
+  			<input type="text" name="username"><br></input>
+  			<label>Password</label><br>
+  			<input type="password" name="password"></input>
+  					<a href="inbox.html">
+			<div class="btn-group btn-group-lg" id="regcta">
+  				<button type="button" class="btn btn-primary">
+  					Login
+  					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				</button>
+ 			</div>
+ 		</a>
+    <span><?php echo $error; ?></span>
+		</form>
+		<h4>Don’t have an account?<br>
+		SIGN UP TODAY!</h4><br>
+		<strong>Why join Veg Buddy?</strong><br>
+		- Make friends with other vegans<br>
+		- Find new recipes<br>
+		- Share your favorite recipes<br>
+		- Learn about becoming vegan<br>
+		<a href="signup.html">
+			<div class="btn-group btn-group-lg" id="regcta">
+  				<button type="button" class="btn btn-primary">
+  					Register Now!
+  					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				</button>
+ 			</div>
+ 		</a>
+	</div>
+
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container" id="footer">
+			<ul class="nav navbar-nav" id="footernav">
+				<li><a href="about.html">ABOUT US</a></li>
+				<li><a href="privacy.html">PRIVACY POLICY</a></li>
+				<li><a href="sitemap.html">SITE MAP</a></li>
+				<li><a href="useragree.html">USER AGREEMENT</a></li>
+				<li><a href="contact.html">CONTACT US</a></li><br>
+			</ul><br><br>
+			<h3>COPYRIGHT 2016 WEB EARTH COOP. 403 EUCLID AVE. SYRACUSE, NY 13023 WEBEARTHCOOP.NET</h3>
+		</div>
+	</footer>
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

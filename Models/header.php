@@ -59,6 +59,7 @@
   		<ul class="nav navbar-nav">
   			<li style="margin-left:2%;"><a href="../index.html">Home</a></li>
   			<li class="dropdown">
+<<<<<<< HEAD
   				<a class="dropdown-toggle" data-toggle="dropdown" role="button" 
   				aria-haspopup="true" aria-expanded="false">Recipes<span class="caret"></span></a>
           		<ul class="dropdown-menu">
@@ -69,6 +70,18 @@
                 <li><a href="snacks.php">Snacks</a></li>
                 <li><a href="appetizers.php">Appetizers</a></li>
                 <li><a href="drinks.php">Drinks</a></li>
+=======
+  				<a href="recipes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+  				aria-haspopup="true" aria-expanded="false">Recipes<span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="dinner.html">Dinner</a></li>
+                <li><a href="dessert.html">Dessert</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="appetizers.html">Appetizers</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+>>>>>>> origin/gh-pages
           		</ul>
   			</li>
   			<li><a href="users.php">Users</a></li>
