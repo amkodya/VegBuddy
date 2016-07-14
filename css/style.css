@@ -5,6 +5,7 @@ style.css
  6/2/16
 */
 
+<<<<<<< HEAD
 /************************************************************ MAIN PAGE ************************************************************/
 
 body { font-family: 'Roboto Condensed', sans-serif; font-size: 12pt; }
@@ -129,3 +130,14 @@ header li a:hover { background-color: none; }
 /*userpage*/
 #privacy table tr:nth-child(even) { background-color: rgba(33,211,6, .3); }
 #privacy table tr:nth-child(even):hover { background-color: #fff; }
+=======
+body {
+	font-family: "Helvetica", sans-serif;
+}
+
+/* INDEX PAGE */
+#mainlogo {
+	max-height: 150px;
+	max-width: 400px;
+}
+>>>>>>> master
