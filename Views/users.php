@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <!--VEG BUDDY 
 *************
-users.html.html
+users.php
 *************
  6/23/16
 -->

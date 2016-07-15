@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +32,7 @@
 
        		<div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><!--<img src="user_pic.png"--><a href="login.html">Login</a></li>
+                <li class="active"><!--<img src="user_pic.png"--><a href="login.php">Login</a></li>
                 <li id="divider">&nbsp;|&nbsp;</li>
                 <li><a href="signup.php">Sign-Up</a></li>
             </ul>
@@ -59,7 +60,7 @@
   		<ul class="nav navbar-nav">
   			<li style="margin-left:2%;"><a href="../index.html">Home</a></li>
   			<li class="dropdown">
-  				<a href="recipes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+  				<a href="recipes.php" class="dropdown-toggle" data-toggle="dropdown" role="button" 
   				aria-haspopup="true" aria-expanded="false">Recipes<span class="caret"></span></a>
           		<ul class="dropdown-menu">
                 <li><a href="breakfast.html">Breakfast</a></li>
@@ -72,6 +73,5 @@
           		</ul>
   			</li>
   			<li><a href="users.php">Users</a></li>
-  		<!--	<li><a href="#">Chatrooms</a></li> -->
   		</ul>
 	</nav>

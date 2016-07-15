@@ -32,10 +32,9 @@ if ($_SERVER['REQUEST_METHOD'] =='POST') {  // if the request method is a POST (
         $stmt->bindParam(':password', $password); //sets binding paramater that binds sql data to php data - password
         $stmt->bindParam(':zip', $zip); //sets binding paramater that binds sql data to php data - zip
         $stmt->execute();  //executes the code to transform sql to php
-<<<<<<< HEAD
+
         header( 'Location: inbox.php' ) ;
-=======
->>>>>>> origin/gh-pages
+
 
 }
 
@@ -82,11 +81,10 @@ if ($_SERVER['REQUEST_METHOD'] =='POST') {  // if the request method is a POST (
              <div class="control-group">
               <label class="control-label" for="email">E-mail</label>
               <div class="controls">
-<<<<<<< HEAD
+
                 <input class="form-control input-lg" type="text" name="email" placeholder="Enter Email" required/> <!-- client website input - it is required -->
-=======
                 <input class="form-control input-lg" type="password" name="password" placeholder="Enter Password" required/> <!-- client website input - it is required -->
->>>>>>> origin/gh-pages
+
               <p class="help-block">Please provide your E-mail</p>
               </div>
             </div>
@@ -94,11 +92,11 @@ if ($_SERVER['REQUEST_METHOD'] =='POST') {  // if the request method is a POST (
             <div class="control-group">
               <label class="control-label" for="password">Password</label>
               <div class="controls">
-<<<<<<< HEAD
+
                   <input class="form-control input-lg" type="password" name="password" placeholder="Enter Password" required/> <!-- client website input - it is required -->
-=======
+
                   <input class="form-control input-lg" type="password" name="passwordcon" placeholder="Enter Password" required/> <!-- client website input - it is required -->
->>>>>>> origin/gh-pages
+
                 <p class="help-block">Password should be at least 6 characters</p>
               </div>
             </div>
