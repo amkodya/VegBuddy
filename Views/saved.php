@@ -16,7 +16,7 @@ saved.html
       <h3>WELCOME USERNAME!</h3>
       <img src="../images/veg_week.jpg"><br>
       <a href="updatephoto.php">Update photo</a><br>
-      <a href="messages.php">Messages</a><br>
+      <a href="inbox.php">Messages</a><br>
       <a href="myfriends.php">My Friends</a><br>
     </div>
 

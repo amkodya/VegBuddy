@@ -16,9 +16,9 @@ deleted.html
     <div id="dashwelc" class="container">              
       <h3>WELCOME USERNAME!</h3>
       <img src="../images/veg_week.jpg"><br>
-      <a href="updatephoto.html">Update photo</a><br>
-      <a href="messages.html">Messages</a><br>
-      <a href="myfriends.html">My Friends</a><br>
+      <a href="updatephoto.php">Update photo</a><br>
+      <a href="inbox.php">Messages</a><br>
+      <a href="myfriends.php">My Friends</a><br>
     </div>
 
   <!-- DASHBAORD -->
