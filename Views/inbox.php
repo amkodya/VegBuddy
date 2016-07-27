@@ -7,19 +7,34 @@ inbox.php
  modified - 7/14/16
  */
 ?>
+<?php 
+$user="root";  //sets the username of the server to  variables
+$pass="root";   //sets the password of the username to the variables
+$dbh = new PDO('mysql:host=localhost;dbname=vegbuddy;port=8888', $user, $pass); //PDO set into var $dbh - query string links to server and we're given username and pw
 
-<?php include("../models/header.php"); ?>
+include ("../models/header.php");
 
-	<!--welcome -->
+    $stmt = $dbh->prepare('SELECT * FROM photo order by idpic DESC limit 1;');  // selects all information from clients table in sql server in order of ascending clientid's
+    $stmt->execute();     //execute the previous code that has $stmt variable
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);   //the result var is set which is the eviqualent of each line item in the sql server
+    //The parameter means it will return an indexed array with each index containing an associative array of each row – do a var_dump($result); to see the array results
+    //var_dump($result);
+?>
+  <!--welcome -->
   <div class="container" id="toprow">
     <div id="dashwelc" class="container">              
       <h3>WELCOME USERNAME!</h3>
-      <img src="../images/veg_week.jpg"><br>
-      <a href="updatephoto.php">Update photo</a><br>
+
+  <?php  foreach  ($result as $row) {  //foreach loop that will itirate through all the results and set them as var row
+        echo '<img src="' . $row['userfile'] .'"><br>';
+       } 
+    ?> <!-- close php code  -->
+
+      
+      <a href="updatephoto.php">Update Photo</a><br>
       <a href="inbox.php">Messages</a><br>
       <a href="myfriends.php">My Friends</a><br>
     </div>
-
   <!-- inbox -->
   <div id="dashboard" class="container">
   <h3>Messages</h3>
@@ -116,7 +131,6 @@ benedictcumberbatchruinedme.tumblr.com
     </div>  
 
   </div>
-
 <?php include("../models/footer.php"); ?>
 
 </body>

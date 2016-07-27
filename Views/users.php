@@ -7,10 +7,6 @@ users.php
 -->
 <?php
 
-if(isset($_SESSION["message"])) {
-    echo $_SESSION['message'];
-    unset($_SESSION['message']);
-}
 
 $user="root";  //sets the username of the server to  variables
 $pass="root";   //sets the password of the username to the variables

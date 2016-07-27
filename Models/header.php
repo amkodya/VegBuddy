@@ -31,7 +31,7 @@
 
        		<div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><!--<img src="user_pic.png"--><a href="login.html">Login</a></li>
+                <li class="active"><!--<img src="user_pic.png"--><a href="login.php">Login</a></li>
                 <li id="divider">&nbsp;|&nbsp;</li>
                 <li><a href="signup.php">Sign-Up</a></li>
             </ul>

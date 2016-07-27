@@ -7,14 +7,28 @@ deleted.html
 
  modified 7/14/16 - changed to PHP
 */
+?><?php 
+$user="root";  //sets the username of the server to  variables
+$pass="root";   //sets the password of the username to the variables
+$dbh = new PDO('mysql:host=localhost;dbname=vegbuddy;port=8888', $user, $pass); //PDO set into var $dbh - query string links to server and we're given username and pw
+
+include ("../models/header.php");
+
+    $stmt = $dbh->prepare('SELECT * FROM photo order by idpic DESC limit 1;');  // selects all information from clients table in sql server in order of ascending clientid's
+    $stmt->execute();     //execute the previous code that has $stmt variable
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);   //the result var is set which is the eviqualent of each line item in the sql server
+    //The parameter means it will return an indexed array with each index containing an associative array of each row – do a var_dump($result); to see the array results
+    //var_dump($result);
 ?>
-<?php include("../models/header.php"); ?>
-
-
   <!--welcome -->
   <div class="container" id="toprow">
     <div id="dashwelc" class="container">              
       <h3>WELCOME USERNAME!</h3>
+
+  <?php  foreach  ($result as $row) {  //foreach loop that will itirate through all the results and set them as var row
+        echo '<img src="' . $row['userfile'] .'"><br>';
+       } 
+    ?> <!-- close php code  -->
       <img src="../images/veg_week.jpg"><br>
       <a href="updatephoto.php">Update photo</a><br>
       <a href="inbox.php">Messages</a><br>

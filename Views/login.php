@@ -1,4 +1,4 @@
-<?php session_start();
+<?php
 /* VEG BUDDY 
 *************
 login.html
@@ -6,31 +6,16 @@ login.html
  6/2/16
  modified 7/14/16 for PHP
 */
-
-
-
-/* $_SESSION['login_user']= $username;  // Initializing Session with value of PHP Variable
-echo $_SESSION['login_user'];
-
-include('login.php'); // Includes Login Script
-
-if(isset($_SESSION['login_user'])){
-header("location: profile.php");
-
-*/
-
 include("../models/header.php");
-
 ?>
-
 	<!--LOGIN FORM -->
 	<div class="container" id="login">
 			<h3>&nbsp;&nbsp;&nbsp;LOGIN</h3>
 		<form id="loginform" action="" method="post">
 			<label>Username</label><br>
-  			<input type="text" name="username"><br></input>
+  			<input type="text" name="user" placeholder="Enter Username"><br></input>
   			<label>Password</label><br>
-  			<input type="password" name="password"></input>
+  			<input type="password" name="pass" placeholder="Enter Password"></input>
   					<a href="inbox.php">
 			<div class="btn-group btn-group-lg" id="regcta">
   				<button type="button" class="btn btn-primary">
